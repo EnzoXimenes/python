@@ -10,7 +10,8 @@ def sacar(saldo_atual, saque):
         print("Seu atual saldo é: ", saldo_atual)
         return saldo_atual
 
-
+def oi():
+    print("OLÁ MUNDO")
 def depositar(saldo_atual, deposito):
     if deposito <= 0:
         print("Valor de deposito inválido!")
