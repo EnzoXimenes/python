@@ -7,27 +7,26 @@ def sacar(saldo_atual, saque):
         return saldo_atual
     else:
         saldo_atual = saldo_atual - saque
-        print("Seu atual saldo é: ", saldo_atual)
+        print(f"Seu atual saldo é: R${saldo_atual:.2f}")
         return saldo_atual
 
-def oi():
-    print("OLÁ MUNDO")
+
 def depositar(saldo_atual, deposito):
     if deposito <= 0:
         print("Valor de deposito inválido!")
         return saldo_atual
     else:
         saldo_atual = saldo_atual + deposito
-        print("O seu atual saldo é: ", saldo_atual)
+        print(f"O seu atual saldo é: R${saldo_atual:.2f}")
         return saldo_atual
 def verificar_saldo(saldo_atual):
-    print("Seu saldo atual é R$" , saldo_atual)
+    print(f"Seu saldo atual é: R${saldo_atual:.2f}")
     return saldo_atual
 
 banco = "BEM VINDO AO BANCO MAZZEN"
 saldo_atual = 1000.0
+print(banco.center(31, "-"))
 while True:
-    print(banco.center(31, "-"))
     print("ESCOLHA UMA OPÇÃO: ")
     print("[ 1 ] Sacar ")
     print("[ 2 ] Depositar ")
